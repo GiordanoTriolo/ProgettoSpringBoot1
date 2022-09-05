@@ -1,0 +1,19 @@
+- Prenotazione (entity)
+- Postazione aziendale (entity)
+		id
+		descrizione
+		tipo (enum: PRIVATO, OPENSPACE, SALA RIUNIONI)
+		max occupanti
+		- edificio (entity)
+			nome
+			indirizzo
+			città
+		
+		prenotabile da un - utente (entity) (per un solo giorno e solo se risulta libera)
+							username
+							nome completo
+							email
+
+- L'utente può cercare la postazione indicando il tipo di postazione e la città (find in repository)
+- L'utente può avere varie prenotazioni ma solo una per ogni specifica data
+		
